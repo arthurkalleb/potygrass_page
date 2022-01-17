@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4d4643;
+}
+
+a {
+  color: #f03c02;
+}
+
+a:hover {
+  color: #fd5c28;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Muli", sans-serif;
+}
+
+.contact-info a {
+  line-height: 1;
+  color: #4d4643;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  color: #f03c02;
+}
+
+contact-info i {
+  color: #b41113;
+  padding: 4px;
+}
+
+.contact-info .icofont-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #e9e9e9;
+}
+
+.social-links a {
+  color: #836a61;
+  padding: 4px 0 4px 20px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #f03c02;
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f3f2;
+}
+
+.section-title {
+  padding-bottom: 5px;
+  text-align: center;
+  color: #c10000;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  color: #65534c;
+}
+
+.section-title h2 strong {
+  font-weight: 700;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
