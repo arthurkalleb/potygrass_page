@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 from dotenv import load_dotenv
 import os
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -30,6 +31,11 @@ class Contato:
         self.quantidade = quantidade
 
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
 @app.route('/send', methods=['GET', 'POST'])
 def send():
     if request.method == 'POST':
@@ -41,10 +47,11 @@ def send():
             request.form["cidade"],
             request.form["quantidade"]
         )
+
         msg = Message(
-            subject=f'{formContato.nome} te solicitou um orçamento',
+            subject=f'{formContato.nome} te enviou uma mensagem no portfólio',
             sender=app.config.get("MAIL_USERNAME"),
-            recipients=[app.config.get("MAIL_USERNAME")],
+            recipients=['docencia.thiago@gmail.com', app.config.get("MAIL_USERNAME")],
             body=f'''
 
             {formContato.nome}  
@@ -57,20 +64,18 @@ def send():
             '''
         )
         mail.send(msg)
-        flash('Mensagem enviada')
+        flash('Mensagem enviada com sucesso!')
     return redirect('/')
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 @app.route('/contato')
 def contato():
     return render_template('contato.html')
 
+
 @app.route('/potygrass')
 def potygrass():
     return render_template('potygrass.html')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
