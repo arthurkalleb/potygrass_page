@@ -29,6 +29,8 @@
 
   const Popper__namespace = /*#__PURE__*/_interopNamespace(Popper);
 
+
+}
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.1.3): util/index.js

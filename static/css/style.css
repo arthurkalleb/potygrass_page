@@ -85,3 +85,9 @@ section {
   margin-bottom: 0;
 }
 
+#alerta{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+}
