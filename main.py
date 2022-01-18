@@ -30,16 +30,6 @@ class Contato:
         self.quantidade = quantidade
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-
-@app.route('/contato')
-def contato():
-    return render_template('contato.html')
-
-
 @app.route('/send', methods=['GET', 'POST'])
 def send():
     if request.method == 'POST':
@@ -70,6 +60,17 @@ def send():
         flash('Mensagem enviada')
     return redirect('/')
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
+
+@app.route('/potygrass')
+def potygrass():
+    return render_template('potygrass.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
