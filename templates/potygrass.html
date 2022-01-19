@@ -36,33 +36,39 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-sm navbar-light justify-content-end">
-    <div class="container">
-        <img src="../static/img/logopoty.svg" alt="Logo Potygrass" width="190" height="50"
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <img src="../static/img/logopoty.svg" alt="Logo Potygrass" width="190" height="50"
              class="d-inline-block align-text-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul class="navbar-nav text-right">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/potygrass">Potygrass</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cuidados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comercial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contato">Contatos</a>
-                </li>
-            </ul>
-        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <ul class="navbar-nav text-right">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/potygrass">Potygrass</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="#">Cuidados</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comercial
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Regional de Vendas</a></li>
+            <li><a class="dropdown-item" href="#">Distribuidores Autorizados</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contato">Contatos</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <div class="content"></div>

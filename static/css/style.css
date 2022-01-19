@@ -6,6 +6,10 @@ body {
   color: #4d4643;
 }
 
+p{
+    color:#fff;
+}
+
 a {
   color: #f03c02;
 }
@@ -72,9 +76,10 @@ section {
 .section-title h2 {
   font-size: 28px;
   font-weight: 300;
+  margin-top: 50px;
   margin-bottom: 10px;
   padding-bottom: 0;
-  color: #65534c;
+  color: #c10000;
 }
 
 .section-title h2 strong {
@@ -90,4 +95,34 @@ section {
     z-index: 10;
     top: 30px;
     right: 30px;
+}
+
+#hero {
+    position: relative;
+}
+#hero video{
+    height:70vh;
+    width:100%;
+    background-position: absolute;
+    z-index:10;
+    object-fit:cover;
+}
+
+#hero .content{
+    background:rgba(0,0,0,0.3);
+    height:99%;
+    width:100%;
+    z-index:20;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#hero .content h1{
+    color:#fff;
+    font-weight:600;
+}
+#hero .content h3{
+    color:#fff;
+    font-weight:300;
 }

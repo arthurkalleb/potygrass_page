@@ -21,31 +21,49 @@
 <div class="navbar navbar-expand-sm bg-light navbar-dark justify-content-end">
     <div class="container">
         <div class="contact-info mr-auto">
-            <i class="bi bi-envelope p-2"></i>potygrass@gmail.com
-            <i class="bi bi-phone-vibrate p-2"></i> (84)99665-8621 (84)99690-4271
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <i class="bi bi-envelope p-2"></i>potygrass@gmail.com
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-phone-vibrate p-2"></i> (84)99665-8621 (84)99690-4271
+                </li>
+            </ul>
+
+
         </div>
         <div class="social-links ">
-            <a href="https://web.whatsapp.com/send?phone=5584997043192" class="whatsapp" target="_blank"><i
-                    class="bi bi-whatsapp"></i></a>
-            <a href="https://www.facebook.com/potygrass/" class="facebook" target="_blank"><i
-                    class="bi bi-facebook "></i></a>
-            <a href="https://www.instagram.com/potygrass/" class="instagram" target="_blank"><i
-                    class="bi bi-instagram"></i></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="https://web.whatsapp.com/send?phone=5584997043192" class="whatsapp" target="_blank"><i
+                            class="bi bi-whatsapp"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/potygrass/" class="facebook" target="_blank"><i
+                            class="bi bi-facebook "></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/potygrass/" class="instagram" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                </li>
+            </ul>
+
         </div>
     </div>
 </div>
 
-<nav class="navbar navbar-expand-sm navbar-light justify-content-end">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <img src="../static/img/logopoty.svg" alt="Logo Potygrass" width="190" height="50"
              class="d-inline-block align-text-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
             <ul class="navbar-nav text-right">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Inicio</a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/potygrass">Potygrass</a>
@@ -53,8 +71,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Cuidados</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comercial</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Comercial
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Regional de Vendas</a></li>
+                        <li><a class="dropdown-item" href="#">Distribuidores Autorizados</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contato">Contatos</a>
@@ -65,10 +90,23 @@
 </nav>
 
 <div class="content">
+    <div id="hero">
+        <video loop muted autoplay poster="">
+            <source src="../static/img/video_potygrass.mp4" type="video/mp4">
+        </video>
+
+        <div class="content d-flex align-items-center">
+            <div class="container text-center">
+                <h1>Site em Construção</h1>
+                <p>Nosso novo site está em fase de melhorias.<br>Mas você pode solicitar o seu orçamento preenchendo o formulário abaixo.</p>
+                <h3>Estamos trabalhando para melhor atendê-los.</h3>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
-        <div class="section-title h2">
-            <h3>SOLICITE <span>ORÇAMENTO</span></h3>
+        <div class="section-title">
+            <h2>SOLICITE <span>ORÇAMENTO</span></h2>
         </div>
         <form class="row g-3" action='/send' method="POST">
             <div class="row g-3">
