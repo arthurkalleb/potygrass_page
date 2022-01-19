@@ -49,17 +49,17 @@ def send():
         )
 
         msg = Message(
-            subject=f'{formContato.nome} te enviou uma mensagem no portfólio',
+            subject=f'{formContato.nome} Solicitou um orçamento',
             sender=app.config.get("MAIL_USERNAME"),
             recipients=['docencia.thiago@gmail.com', app.config.get("MAIL_USERNAME")],
             body=f'''
-
-            {formContato.nome}  
-            {formContato.email}
-            {formContato.fone}
-            {formContato.estado}
-            {formContato.cidade}
-            {formContato.quantidade}
+            
+            NOME:{formContato.nome}  
+            E-MAIL:{formContato.email}
+            TELEFONE:{formContato.fone}
+            ESTADO:{formContato.estado}
+            CIDADE:{formContato.cidade}
+            QUANTIDADE em M²:{formContato.quantidade}
 
             '''
         )
